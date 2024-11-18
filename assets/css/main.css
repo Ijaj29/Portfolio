@@ -3476,7 +3476,7 @@ p {
   font-size: 20px;
 }
 .common__icon:hover {
-  background: var(--base);
+  /* background: var(--base); */
 }
 .common__icon:hover i {
   color: var(--title);
@@ -3510,6 +3510,7 @@ p {
 }
 .project-item-v2 .thumb .content .common__icon {
   border-radius: 50%;
+  z-index: 3;
 }
 .project-item-v2 .thumb::before {
   position: absolute;
