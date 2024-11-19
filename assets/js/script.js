@@ -31,7 +31,7 @@ $(document).ready(function () {
     speed: 3000,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 5000,
     },
     pagination: {
       el: ".swiper-pagination3",
@@ -206,33 +206,6 @@ $(document).ready(function () {
   //>> Preloader <<//
 });
 
-// function emailSend() {
-//   var userName = document.getElementById("name").value;
-//   var email = document.getElementById("email").value;
-//   var subject = document.getElementById("subject").value;
-//   var message = document.getElementById("message").value;
-//   var messageBody =
-//     "Name " + userName + "<br/> subject " + subject + "<br/> Email " + email;
-//   "<br/> Message " + message;
-//   Email.send({
-//     Host: "smtp.elasticemail.com",
-//     Username: "ijaj.jaman29@gmail.com",
-//     Password: "15F0D2F213DDA96F88204DF74487EF3D10C7",
-//     To: "ijaj.jaman29@gmail.com",
-//     From: "ijaj.jaman29@gmail.com",
-//     Subject: "This is the subject",
-//     Body: messageBody,
-//   }).then((message) => {
-//     if (message == "OK") {
-//       swal("Successful", "success");
-//     } else {
-//       swal("Error", "You clicked the button!", "error");
-//     }
-//   });
-// }
-
-//>> Javascrip Js <<//
-
 (function () {
   // Initialize EmailJS with your user ID
   emailjs.init("h5BNmd7AoxmSkV4qf"); // Replace 'YOUR_USER_ID' with your EmailJS User ID
@@ -257,7 +230,7 @@ function emailSend() {
       function (response) {
         alert("Email sent successfully!");
         console.log("SUCCESS!", response.status, response.text);
-		document.querySelector("form[name='enq']").reset();
+        document.querySelector("form[name='enq']").reset();
       },
       function (error) {
         alert("Failed to send email. Please try again later.");
@@ -267,3 +240,5 @@ function emailSend() {
 
   return false; // Prevent form submission
 }
+
+//>> Javascrip Js <<//
