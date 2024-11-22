@@ -112,9 +112,10 @@ $(document).ready(function () {
   //>> Menu Fixed Components <<//
 
   //>> Main Menu <<//
-  $(".header-bar").on("click", function (e) {
+  $(".header-bar, .main-menu li a").on("click", function (e) {
     $(".main-menu, .header-bar").toggleClass("active");
   });
+  
   $(".main-menu li a").on("click", function (e) {
     var element = $(this).parent("li");
     if (element.hasClass("open")) {
